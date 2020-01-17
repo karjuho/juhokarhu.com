@@ -2,9 +2,14 @@
     <div class="wrapper">
       {%- assign default_paths = site.pages | map: "path" -%}
       {%- assign page_paths = site.header_pages | default: default_paths -%}
-      <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+      <a class="site-title" rel="author" href="{{ "/" | relative_url }}">👋 {{ site.title | escape }}</a>
+
+      <h1 class="big-header"><small>A developing</small><br>
+        Product Designer</h1>
+
+      <p>I learn, question and challange to innovate. Then zoom in to pixel and code level to ensure quality all the way!</p>
   
-      {%- if page_paths -%}
+      <!--{%- if page_paths -%}
         <nav class="site-nav">
             {%- for path in page_paths -%}
               {%- assign my_page = site.pages | where: "path", path | first -%}
@@ -13,7 +18,7 @@
               {%- endif -%}
             {%- endfor -%}
         </nav>
-      {%- endif -%}
+      {%- endif -%}-->
     </div>
   </header>
   

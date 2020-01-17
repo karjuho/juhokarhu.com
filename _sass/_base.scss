@@ -94,7 +94,19 @@ li {
  * Headings
  */
 h1, h2, h3, h4, h5, h6 {
-  font-weight: $base-font-weight;
+  font-weight: 800;
+  font-style: normal;
+  color: $header-color;
+
+  small {
+    font-weight: 500;
+    font-size: 0.66em;
+  }
+}
+
+.big-header {
+  font-size: 3em;
+  line-height: 1em;
 }
 
 
@@ -106,21 +118,16 @@ a {
   color: $brand-color;
   text-decoration: none;
 
-  &:visited {
-    color: darken($brand-color, 15%);
-  }
-
   &:hover {
-    color: $text-color;
     text-decoration: underline;
   }
+}
 
-  .social-media-list &:hover {
+.site-title {
+  &, &:hover {
+    font-weight: 800;
+    color: #000;
     text-decoration: none;
-
-    .username {
-      text-decoration: underline;
-    }
   }
 }
 
@@ -186,8 +193,8 @@ pre {
   @include media-query($on-laptop) {
     max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
     max-width:         calc(#{$content-width} - (#{$spacing-unit}));
-    padding-right: $spacing-unit / 2;
-    padding-left: $spacing-unit / 2;
+    padding-right: $spacing-unit;
+    padding-left: $spacing-unit;
   }
 }
 
