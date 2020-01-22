@@ -2,27 +2,200 @@
 layout: default
 ---
 
-<div class="home">
+<main class="home">
 
-  {{ content }}
+      <header class="home-header" role="banner">
+        <div class="fixed">
+          {%- assign default_paths = site.pages | map: "path" -%}
+          {%- assign page_paths = site.header_pages | default: default_paths -%}
+          <a class="site-title" rel="author" href="{{ "/" | relative_url }}"><img src="{{ site.baseurl }}/assets/images/juho.png" alt="Profile picture of Juho"> JUHO KARHU</a>
 
-  {%- if site.cases.size > 0 -%}
-    <ul class="post-list">
-      {%- for post in site.cases -%}
-      <li>
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        <h3>
-          <a class="post-link" href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
-          </a>
-        </h3>
-        {%- if site.show_excerpts -%}
-          {{ post.excerpt }}
-        {%- endif -%}
-      </li>
-      {%- endfor -%}
-    </ul>
+          <h1 class="big-header"><small>A developing</small><br>
+            Product Designer</h1>
 
-  {%- endif -%}
+          <p>Hi, I am a Product Designer with full stack coding skills.</p>
 
-</div>
+          <p>I question and challange both myself and others to learn enough to deliver products that lead the change.</p>
+            
+          <p>Why? For the fun of it!</p>
+          
+          <ul class="nav">
+            <li>
+              <a href="#portfolio">Portfolio</a>
+            </li>
+            <li>
+              <a href="#cv">CV</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+      
+          <!--{%- if page_paths -%}
+            <nav class="site-nav">
+                {%- for path in page_paths -%}
+                  {%- assign my_page = site.pages | where: "path", path | first -%}
+                  {%- if my_page.title -%}
+                  <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+                  {%- endif -%}
+                {%- endfor -%}
+            </nav>
+          {%- endif -%}-->
+        </div>
+      </header>
+  
+      <div class="home-content" aria-label="Content">
+        <div class="wrapper">
+
+          <div class="section" id="portfolio">
+            <h2 class="text-center caps-title">Portfolio</h2>
+    
+            {%- if site.cases.size > 0 -%}
+              <ul class="cases-list">
+                {% assign cases = site.cases | sort: 'order' %}
+                {%- for case in cases -%}
+                <li>
+                  <div class="case-link" href="{{ case.url | relative_url }}">
+                    <div class="box">
+                      <div class="case-cover">
+                        <img src="{{ site.baseurl }}/assets/images/{{ case.coverImage }}" alt="{{ case.name | escape }}">
+                      </div>
+                    </div>
+                    <h3>
+                        {{ case.name | escape }}
+                    </h3>
+                    {%- if case.excerpt -%}
+                      <p>{{ case.excerpt }}</p>
+                    {%- endif -%}
+
+                    {%- if case.link -%}
+                      <p><a href="" class="button">Read case study</a></p>
+                    {%- endif -%}
+                  </div>
+                </li>
+                {%- endfor -%}
+              </ul>
+          
+            {%- endif -%}
+          </div>
+
+          <div class="section" id="cv">
+            <h2 class="text-center caps-title">Cv</h2>
+
+            <div class="inset">
+              <h3 class="margin-top">Experience</h3>
+
+              <div class="experience-table">
+                <div class="row">
+                  <div class="years">
+                    2019-2020
+                  </div>
+                  <div class="dots"></div>
+                  <div class="content">
+                    <div class="title">
+                      Design Lead
+                    </div>
+                    Hyper Island, Stockholm Sweden
+                  </div>
+                  <div class="category">Education</div>
+                </div>
+
+                <div class="row">
+                  <div class="years">
+                    2015-2019
+                  </div>
+                  <div class="dots"></div>
+                  <div class="content">
+                    <div class="title">
+                      Product Designer & Full Stack Developer
+                    </div>
+                    Ninjami, Oulu Finland & Borlänge Sweden
+                  </div>
+                  <div class="category">Work</div>
+                </div>
+
+                <div class="row">
+                  <div class="years">
+                    2011-2015
+                  </div>
+                  <div class="dots"></div>
+                  <div class="content">
+                    <div class="title">
+                      Web Designer & Developer
+                    </div>
+                    Ideasampo, Oulu Finland
+                  </div>
+                  <div class="category">Work</div>
+                </div>
+
+                <div class="row">
+                  <div class="years">
+                    2012-2013
+                  </div>
+                  <div class="dots"></div>
+                  <div class="content">
+                    <div class="title">
+                      Marketing / Branding Assistant
+                    </div>
+                    Markkinointi-instituutti, Oulu Finland
+                  </div>
+                  <div class="category">Education</div>
+                </div>
+
+                <div class="row">
+                  <div class="years">
+                    2010-2011
+                  </div>
+                  <div class="dots"></div>
+                  <div class="content">
+                    <div class="title">
+                      Web Designer
+                    </div>
+                    Freelance during High School
+                  </div>
+                  <div class="category">Work</div>
+                </div>
+              </div>
+
+
+              <h3>Languages</h3>
+
+              <ul class="languages">
+                <li class="language">
+                  <strong>Swedish</strong>
+                  First language
+                </li>
+
+                <li class="language">
+                  <strong>Finnish</strong>
+                  First language
+                </li>
+
+                <li class="language">
+                  <strong>English</strong>
+                  Good enough
+                </li>
+
+                <li class="language">
+                  <strong>Norwegian</strong>
+                  Norwegian wife 🤷‍♂️
+                </li>
+              </ul>
+
+          </div>
+
+          <div class="section" id="contact">
+            <h2 class="text-center caps-title">Contact</h2>
+
+            <div class="email">
+              <h2>Nice to meet you!</h2>
+              <a href="mailto:hello@juhokarhu.com">hello@juhokarhu.com</a>
+            </div>
+
+            <p class="copyright">© Juho Karhu </p>
+          </div>
+
+        </div>
+      </div>
+
+</main>
