@@ -224,7 +224,11 @@ ul.cases-list {
 
     .row {
         display: grid;
-        grid-template-columns: auto 33px 2fr 1fr;
+        grid-template-columns: 46px 33px 2fr 1fr;
+
+        @media screen and (min-width: $on-laptop) {
+            grid-template-columns: auto 33px 2fr 1fr;
+        }
 
         .years {
             color: lighten($text-color, 20);
