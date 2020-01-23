@@ -17,21 +17,14 @@
             position: sticky;
             top: $spacing-unit;
         }
-        // grid-area: 1 / 1 / 2 / 2;
     }
 }
 
 .nav-container {
     padding: $spacing-unit 0;
-    // grid-area: 2 / 1 / 3 / 2;
-
-    // position: fixed;
-    // bottom: 0;
 
     @media screen and (max-width: $on-laptop) {
         width: 100%;
-        margin-bottom: -$spacing-unit * 3;
-        left: 0;
         padding: $spacing-unit;
         box-sizing: border-box;
         margin-left: -$spacing-unit;
@@ -39,18 +32,16 @@
     }
 }
 
-.fixed {
-    position:fixed;
-    top:0;
-    margin-left: 0;
-    z-index:99999;
-}
-
 .home-content {
 
     
     .section {
         padding-top: $spacing-unit * 3;
+
+        &:first-child {
+            padding-top: 0;
+        }
+
         padding-bottom: 0;
 
         &#contact {
@@ -76,8 +67,6 @@
     }
     
     @media screen and (min-width: $on-laptop) {
-        // grid-area: 1 / 2 / 3 / 3;
-
         .section, .section:first-child {
             padding-top: $spacing-unit * 1.3;
             padding-bottom: $spacing-unit * 3;

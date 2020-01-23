@@ -15,14 +15,7 @@ function scrollSpy() {
     $(".nav a[href='#"+current+"']").addClass('active');
     $(".nav a").not("a[href='#"+current+"']").removeClass('active');      
 }
-  
-function fixedNav(element, offset) {
-    if (offset <= window.pageYOffset && $(window).innerWidth() < 1200) {
-        element.classList.add("fixed");
-    } else {
-        element.classList.remove("fixed");
-    }
-}
+
 
 $(document).ready(function() {
 
@@ -44,16 +37,11 @@ $(document).ready(function() {
       return false;
   });
 
-  var element = document.getElementById("nav"),
-  offset = element.offsetTop;
+  $("#nav").sticky({topSpacing:0});
+
 
   $(window).scroll( function(event) {
       scrollSpy();
-      fixedNav(element, offset);
-  });
-
-  $( window ).resize(function() {
-    fixedNav(element, offset);
   });
 
 });
