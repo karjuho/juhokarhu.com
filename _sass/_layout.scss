@@ -10,10 +10,11 @@
 .home-header {
     @media screen and (min-width: $on-laptop) {
         width: 25%;
+        min-width: 300px;
 
         .sticky {
             position: sticky;
-            top: $spacing-unit;
+            top: 0;
         }
     }
 
@@ -27,7 +28,7 @@
 }
 
 .nav-container {
-    padding: $spacing-unit 0;
+    padding: 0 $spacing-unit;
 
     @media screen and (max-width: $on-laptop) {
         width: 100%;
