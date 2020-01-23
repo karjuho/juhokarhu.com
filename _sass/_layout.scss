@@ -8,15 +8,20 @@
 }
 
 .home-header {
-    padding: $spacing-unit $spacing-unit 0;
-
     @media screen and (min-width: $on-laptop) {
-        padding: $spacing-unit;
         width: 25%;
 
         .sticky {
             position: sticky;
             top: $spacing-unit;
+        }
+    }
+
+    .header-content {
+        padding: $spacing-unit $spacing-unit 0;
+
+        @media screen and (min-width: $on-laptop) {
+            padding: $spacing-unit;
         }
     }
 }
@@ -28,8 +33,13 @@
         width: 100%;
         padding: $spacing-unit;
         box-sizing: border-box;
-        margin-left: -$spacing-unit;
         background-image: linear-gradient(180deg, #F9F9F9 50%, rgba(255,255,255,0.00) 100%);
+    }
+}
+
+#nav-sticky-wrapper {
+    @media screen and (max-width: $on-laptop) {
+        margin-bottom: -$spacing-unit * 3;
     }
 }
 
@@ -38,10 +48,6 @@
     
     .section {
         padding-top: $spacing-unit * 3;
-
-        &:first-child {
-            padding-top: 0;
-        }
 
         padding-bottom: 0;
 
