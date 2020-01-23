@@ -5,6 +5,7 @@ layout: default
 <main class="home">
 
       <header class="home-header" role="banner">
+        <div class="sticky">
           {%- assign default_paths = site.pages | map: "path" -%}
           {%- assign page_paths = site.header_pages | default: default_paths -%}
           <a class="site-title" rel="author" href="{{ "/" | relative_url }}"><img src="{{ site.baseurl }}/assets/images/juho.png" alt="Profile picture of Juho"> JUHO KARHU</a>
@@ -18,21 +19,22 @@ layout: default
             
           <p>Why? For the fun of it!</p>
 
-      </header>
+          <div class="nav-container" id="nav">
+            <ul class="nav">
+              <li>
+                <a href="#portfolio" class="active scroll">Portfolio</a>
+              </li>
+              <li>
+                <a href="#cv" class="scroll">CV</a>
+              </li>
+              <li>
+                <a href="#contact" class="scroll">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
 
-      <div class="nav-container">
-        <ul class="nav">
-          <li>
-            <a href="#portfolio" class="active scroll">Portfolio</a>
-          </li>
-          <li>
-            <a href="#cv" class="scroll">CV</a>
-          </li>
-          <li>
-            <a href="#contact" class="scroll">Contact</a>
-          </li>
-        </ul>
-      </div>
+      </header>
   
       <div class="home-content" aria-label="Content">
         <div class="wrapper">
