@@ -5,7 +5,6 @@ layout: default
 <main class="home">
 
       <header class="home-header" role="banner">
-        <div class="fixed">
           {%- assign default_paths = site.pages | map: "path" -%}
           {%- assign page_paths = site.header_pages | default: default_paths -%}
           <a class="site-title" rel="author" href="{{ "/" | relative_url }}"><img src="{{ site.baseurl }}/assets/images/juho.png" alt="Profile picture of Juho"> JUHO KARHU</a>
@@ -18,37 +17,28 @@ layout: default
           <p>I question and challange both myself and others to learn enough to deliver products that lead the change.</p>
             
           <p>Why? For the fun of it!</p>
-          
-          <ul class="nav">
-            <li>
-              <a href="#portfolio">Portfolio</a>
-            </li>
-            <li>
-              <a href="#cv">CV</a>
-            </li>
-            <li>
-              <a href="#contact">Contact</a>
-            </li>
-          </ul>
-      
-          <!--{%- if page_paths -%}
-            <nav class="site-nav">
-                {%- for path in page_paths -%}
-                  {%- assign my_page = site.pages | where: "path", path | first -%}
-                  {%- if my_page.title -%}
-                  <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
-                  {%- endif -%}
-                {%- endfor -%}
-            </nav>
-          {%- endif -%}-->
-        </div>
+
       </header>
+
+      <div class="nav-container">
+        <ul class="nav">
+          <li>
+            <a href="#portfolio" class="active scroll">Portfolio</a>
+          </li>
+          <li>
+            <a href="#cv" class="scroll">CV</a>
+          </li>
+          <li>
+            <a href="#contact" class="scroll">Contact</a>
+          </li>
+        </ul>
+      </div>
   
       <div class="home-content" aria-label="Content">
         <div class="wrapper">
 
           <div class="section" id="portfolio">
-            <h2 class="text-center caps-title">Portfolio</h2>
+            <h2 class="text-center section-title">Portfolio</h2>
     
             {%- if site.cases.size > 0 -%}
               <ul class="cases-list">
@@ -58,6 +48,10 @@ layout: default
                   <div class="case-link" href="{{ case.url | relative_url }}">
                     <div class="box">
                       <div class="case-cover">
+                        <!-- <video playsinline muted loop autoplay width="100%" height="auto" preload="metadata" style="margin-bottom:-10px">
+                          <source src="{{ site.baseurl }}/assets/movies/biila-go.mp4" type="video/mp4">
+                          Your browser does not support HTML5 video.
+                        </video> -->
                         <img src="{{ site.baseurl }}/assets/images/{{ case.coverImage }}" alt="{{ case.name | escape }}">
                       </div>
                     </div>
@@ -74,15 +68,21 @@ layout: default
                   </div>
                 </li>
                 {%- endfor -%}
-              </ul>
-          
+            </ul>
             {%- endif -%}
           </div>
 
           <div class="section" id="cv">
-            <h2 class="text-center caps-title">Cv</h2>
+            <h2 class="text-center section-title">Cv</h2>
 
             <div class="inset">
+              <h3>Background</h3>
+              <p>I was born in Finland, but grew up mostly in Sweden. Since I have always felt like a combination. So it was naturally to take a combined role when it was time to choose a profession. From the start, I was a designer and developer. I really like to combine the different parts, and to actually build the things I imagine. My coding experience helps me to not just understand the constrains, but also see the possibilities!</p>
+
+              <p>Currently I am super intersted in the topic of humanity centered design. Moving focus from the user to a more holistic perspective. How will this affect not only the user but other people, workers, sosciaty and enviroment? How can we make design more inclusive?</p>
+
+              <p>On my free time I love spending time with my family, video games and baking artisan pizza and bread.</p>
+
               <h3 class="margin-top">Experience</h3>
 
               <div class="experience-table">
@@ -173,29 +173,31 @@ layout: default
 
                 <li class="language">
                   <strong>English</strong>
-                  Good enough
+                  Very good
                 </li>
 
                 <li class="language">
                   <strong>Norwegian</strong>
-                  Norwegian wife 🤷‍♂️
+                  Excellent understanding
                 </li>
               </ul>
 
           </div>
+          </div>
 
           <div class="section" id="contact">
-            <h2 class="text-center caps-title">Contact</h2>
+            <h2 class="text-center section-title">Contact</h2>
 
-            <div class="email">
-              <h2>Nice to meet you!</h2>
-              <a href="mailto:hello@juhokarhu.com">hello@juhokarhu.com</a>
-            </div>
+            <h3>Get in touch</h3>
+            <p>The whole point of this portfolio is to get in contact with people. Go ahead!</p>
+
+            <p><a href="+47736878693">+46 73 6878 693</a><br>
+              <span class="mail">juhokarhu(at)hyperisland.se</span></p>
 
             <p class="copyright">© Juho Karhu </p>
           </div>
 
-        </div>
+      </div>
       </div>
 
 </main>

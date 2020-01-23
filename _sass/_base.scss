@@ -26,6 +26,19 @@ body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
+
+  background-image: url(/assets/images/footer.svg);
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-size: 1200px auto;
+
+  @media screen and (max-width: $on-laptop) {
+      background-position: center bottom;
+  }
+
+  &.cases {
+    background: #fff;
+  }
 }
 
 
@@ -99,16 +112,28 @@ h1, h2, h3, h4, h5, h6 {
   color: $header-color;
 }
 
-h3 {
+h1 {
+  font-size: 3.3em;
+}
+
+h2 {
   font-size: 2em;
 }
 
-.caps-title {
+h3 {
+  font-size: 1.2em;
+}
+
+.section-title {
   font-size: 0.875em;
   text-transform: uppercase;
   letter-spacing: 1px;
   color: #B7B7B7;
   font-weight: 500;
+
+  @media screen and (max-width: $on-laptop) {
+    display: none;
+  }
 }
 
 .margin-top {
@@ -254,4 +279,12 @@ table {
   td {
     border: 1px solid $grey-color-light;
   }
+}
+
+hr {
+  margin: ($spacing-unit * 3) auto;
+  padding: 0;
+  border: none;
+  border-top: 2px dashed #C7C7C7;
+  width: 50px;
 }

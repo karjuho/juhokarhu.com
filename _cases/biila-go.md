@@ -1,8 +1,8 @@
 ---
 layout: case
-name: Future of car movment
+name: Moving cars marketplace
 order: 1
 coverImage: biila-go.png
-excerpt: Lead, designed and coded the project from beeing a manual mail with youtube links service to a full fledge streaming service.
+excerpt: Our customer Biila had been moving peoples cars for while, like taking it to service while you work. But having an internal team of drivers limited to a few citys was not scalable so together we built an open marketplace where anyone can move a car and get paid.
 ---
-Lead, designed and coded the project from beeing a manual mail with youtube links service to a full fledge streaming service.
+Moving you car when you do not have time, like taking it to service. But having an internal team of drivers bound to the capital city was not scalable so together we built an open marketplace where anyone can move a car and get paid.
