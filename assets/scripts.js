@@ -1,5 +1,5 @@
 function scrollSpy() {
-    var sections = ['portfolio', 'cv', 'contact'];
+    var sections = ['work', 'about', 'contact'];
     var current;
 
     
