@@ -3,7 +3,7 @@ layout: case
 name: Configurator maker
 order: 2
 coverImage: fiilistele.png
-excerpt: Configuring what you want to buy should be easily avalible. But it is hard and expensive. That's why we built a configurator maker!
+excerpt: In 2020 you should be able to experience things online before you buy them. But configurators are hard and expensive. That's why we built a configurator maker based on a subscription model!
 ---
 
 ## Buying a house can be scary
