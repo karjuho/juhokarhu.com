@@ -398,7 +398,10 @@ ul.cases-list {
     margin-left: auto;
 
     figure.image {
-        margin: $spacing-unit (-$spacing-unit);
+        margin: $spacing-unit 0;
+        @media screen and (min-width: $on-laptop) {
+            margin: $spacing-unit (-$spacing-unit);
+        }
     }
 }
 
