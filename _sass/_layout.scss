@@ -12,6 +12,10 @@
         width: 25%;
         min-width: 300px;
 
+        p {
+            line-height: 1.5em;
+        }
+
         .sticky {
             position: sticky;
             top: 0;

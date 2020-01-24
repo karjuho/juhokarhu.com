@@ -14,11 +14,7 @@ layout: default
             <h1 class="big-header"><small>A developing</small><br>
               Product Designer</h1>
   
-            <p>Hi, I am a Product Designer with full stack coding skills.</p>
-  
-            <p>I question and challange both myself and others to learn enough to deliver products that lead the change.</p>
-              
-            <p>Why? For the fun of it!</p>
+            <p>Hi, I am a Product Designer with full stack developing skills and over 10 years of experience. I question and challange myself and others to learn more and see the bigger picture, so that we can deliver digital products that are sustainable and lead the change.</p>
           </div>
 
           <div class="nav-container" id="nav">
@@ -49,7 +45,7 @@ layout: default
                 {% assign cases = site.cases | sort: 'order' %}
                 {%- for case in cases -%}
                 <li>
-                  <div class="case-link" href="{{ case.url | relative_url }}">
+                  <a class="case-link" href="{{ case.url | relative_url }}">
                     <div class="box">
                       <div class="case-cover">
                         <!-- <video playsinline muted loop autoplay width="100%" height="auto" preload="metadata" style="margin-bottom:-10px">
@@ -69,7 +65,7 @@ layout: default
                     {%- if case.link -%}
                       <p><a href="" class="button">Read case study</a></p>
                     {%- endif -%}
-                  </div>
+                  </a>
                 </li>
                 {%- endfor -%}
             </ul>
@@ -81,11 +77,9 @@ layout: default
 
             <div class="inset">
               <h3>About me</h3>
-              <p>I was born in Finland, but grew up mostly in Sweden. Since I have always felt like a combination. So it was naturally to take a combined role when it was time to choose a profession. From the start, I was a designer and developer. I really like to combine the different parts, and to actually build the things I imagine. My coding experience helps me to not just understand the constrains, but also see the possibilities!</p>
+              <p>I am a Product Designer born in Finland and raised in Sweden. When I started to learn design it was natural for me to also learn how to code as just imagining things was not enough, I wanted to also build the things in my head! I had found my passion. I think my coding skills help me when I design to understand the constraints and see the possibilities!</p>
 
-              <p>Currently I am super intersted in the topic of humanity centered design. Moving focus from the user to a more holistic perspective. How will this affect not only the user but other people, workers, sosciaty and enviroment? How can we make design more inclusive?</p>
-
-              <p>On my free time I love spending time with my family, video games and baking artisan pizza and bread.</p>
+              <p>In my free time, I love spending time with my family, video games or baking lovely smelling artisan pizza & bread.</p>
 
               <h3 class="margin-top">Experience</h3>
 
