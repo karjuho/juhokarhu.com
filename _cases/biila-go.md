@@ -14,7 +14,7 @@ Our customer Biila had been moving peoples cars for while, taking it to service 
 
 ### My part
 
-I was Design Lead and Product Designer on this project, while also helping with some of the coding. I managed client requests, lead planning and ideation, tried out interactive prototypes and did the final UI following brand guidelines.
+I was Design Lead and Product Designer on this project, while also doing a lot of coding. I partly managed the client, lead planning and ideation, created interactive prototypes and did the final UI following brand guidelines. I coded the visuals (HTML/SCSS) and the admin panel. My skilled developer colleague did most of the Vue JS implementation, I did also somme parts of it.
 
 ---
 
@@ -28,6 +28,6 @@ We were building something totally new here, and therefore we did not want to bu
 
 {% include image.html url="/assets/images/biila-go/bid.png" description="Automatic bidding" %}
 
-## Reverse bidding
+## Unique problem means unique solutions
 
 So this was the biggest challenge for our client before we launched Biila Go. They had to manually find and do bidding with drivers through WhatsApp or other channels, the driver who would drive for least compensation would get a drive. This was a hassle to do manually. Our goal was to automate this. So we invented a reverse bidding system, where the one who bids the lowest price, gets the drive. Remember, it is not the driver who pays, but the one who needs the car moved. Sometimes there is a win-win situation where a driver needs to get to the place and they are prepared to drive for free instead of buying a train ticket so we added "Drive for free - win at once" option on some drives!

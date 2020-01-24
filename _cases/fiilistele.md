@@ -23,14 +23,14 @@ I had a somewhat shared lead on this together with my boss. I took responsibilit
 
 ## The power of dreaming
 
-When you play around with a configurator you really can imagine yourself with the project. The configurator is built in a way where you can sit down with your partner and dream about your new house. Jumping from room to room and fine tune the details. It's like playing The Sims, only it's your real house!
+When you play around with a configurator you really can imagine yourself with the project. The configurator is built in a way where you can sit down with your partner and dream about your new house. Jumping from room to room and fine tune the details. It's like playing The Sims, only it's your real house! We paid extra attention to detail to make the loading snappy and fast with smooth animations.
 
 ---
 
 {% include image.html url="/assets/images/fiilistele/leads.png" description="Sending" %}
 
-## Hot leads
+## Getting leads
 
 Of course, the leads that come through a configurator might not be that many. But after dreaming about their house imagine how prepared they are to buy when they finally are ready to make contact. That's why we made it simple to look at your selections and send them directly to a seller. 
 
-I know even cooler would be to directly sell the house with transparent pricing, but the house maker industry is not quite there yet. I tried, but I am sure it will come!
+I know even better would be to directly sell the house with transparent pricing, but the house making industry is not quite there yet. But I am sure it will come!
