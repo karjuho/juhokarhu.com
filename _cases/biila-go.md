@@ -1,8 +1,33 @@
 ---
 layout: case
-name: Moving cars marketplace
+name: Car moving marketplace
 order: 1
 coverImage: biila-go.png
-excerpt: Our customer Biila had been moving peoples cars for while, like taking it to service while you work. But having an internal team of drivers limited to a few citys was not scalable so together we built an open marketplace where anyone can move a car and get paid.
+excerpt: You know when your car needs to be somewhere, like service, but you donät have time to drive it. That's what Biila Go does for you. Finds a qualified driver and moves the car, all while you just keep doing what you did.
 ---
-Moving you car when you do not have time, like taking it to service. But having an internal team of drivers bound to the capital city was not scalable so together we built an open marketplace where anyone can move a car and get paid.
+
+## Move it
+
+Our customer Biila had been moving peoples cars for while, taking it to service while you work or moving a sold car to an other part of the country. But having an internal team of drivers limited to a few citys was not scalable so together we built an open marketplace where anyone can move a car and get paid.
+
+---
+
+### My part
+
+I was Design Lead and Product Designer on this project, while also helping with some of the coding. I managed client requests, lead planning and ideation, tried out interactive prototypes and did the final UI following brand guidelines.
+
+---
+
+{% include image.html url="/assets/images/biila-go/brand.png" description="Learn by doing" %}
+
+## Move fast, learn fast
+
+We were building something totally new here, and therefore we did not want to build too many features that would be nice to have but maybe no one would ever end up using. Therefore we started with a really streamlined search, with only from, to and date. That has worked well, but the listing has gone through many iterations. We found out that the most important information is where you start and where you end the trip, not the stops in between because those would not matter. What matters is where you start and end.
+
+---
+
+{% include image.html url="/assets/images/biila-go/bid.png" description="Automatic bidding" %}
+
+## Reverse bidding
+
+So this was the biggest challenge for our client before we launched Biila Go. They had to manually find and do bidding with drivers through WhatsApp or other channels, the driver who would drive for least compensation would get a drive. This was a hassle to do manually. Our goal was to automate this. So we invented a reverse bidding system, where the one who bids the lowest price, gets the drive. Remember, it is not the driver who pays, but the one who needs the car moved. Sometimes there is a win-win situation where a driver needs to get to the place and they are prepared to drive for free instead of buying a train ticket so we added "Drive for free - win at once" option on some drives!
