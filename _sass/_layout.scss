@@ -43,6 +43,8 @@
 }
 
 #nav-sticky-wrapper {
+    position: relative;
+    z-index: 9999;
     @media screen and (max-width: $on-laptop) {
         margin-bottom: -$spacing-unit * 3;
     }
