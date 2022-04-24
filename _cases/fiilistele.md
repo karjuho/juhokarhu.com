@@ -1,9 +1,9 @@
 ---
 layout: case
-name: Configurator maker
+name: Fiilistele
 order: 2
 coverImage: fiilistele.png
-excerpt: In 2020 you should be able to experience things online before you buy them. But configurators are hard and expensive. That's why we built a configurator maker with a subscription model!
+excerpt: In this day and age you should be able to experience things online before you buy them so you can be sure you buy the right thing. But configurators are hard and expensive. That's why we built a configurator SAAS!
 ---
 
 ## Buying a house can be scary
